@@ -102,10 +102,12 @@ h3 {
 .add-friends {
 	text-align: center;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .friend-name {
 	margin-top: 3%;
+	text-align: center;
 }
 
 .friends-container {
@@ -117,6 +119,10 @@ h3 {
 	max-width: 500px;
 	box-sizing: border-box;
 	margin: 0 auto;
+}
+
+.friend-btn {
+	margin: 25px 0;
 }
 
 .form-container {
@@ -292,7 +298,6 @@ footer {
 	width: 100%;
 }
 
-
 #widget {
 	align-items: center;
 	margin: 0 auto;
@@ -427,4 +432,3 @@ footer {
 	margin: 0 auto;
 	max-width: 500px;
 }
-
