@@ -222,26 +222,34 @@ a:hover {
 	color: #fdcb60;
 }
 
-#footer-wrap {
-	width: 100%;
-	margin: 0 auto;
+footer {
+	width: 100vw;
+	height: 4em;
+	background-color: #fff;
 	position: fixed;
-	left: 0;
-	bottom: -35px;
+	bottom: 0;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
 }
 
-.footerBtn {
-	background: #fff;
-	padding: 4% 10% 0 10%;
+#footer-wrap {
+	width: 100%;
+	padding: 5px 10px 0 10px;
+	bottom: 0px;
+}
+
+.footer {
 	display: flex;
 	justify-content: space-between;
+	list-style-type: none;
 }
 
 .footer-img {
+	display: inline;
+	padding: 10px 10px 0 10px;
 	width: 1.75em;
 	max-height: 1.5em;
-	overflow: visible;
-	object-fit: contain;
 }
 
 .menu-icon {

@@ -85,9 +85,9 @@ const App: React.FC = (): React.ReactElement => {
   const checkLoggedIn = (): React.ReactElement => {
     if (currentStatus) {
       return (
-        <div id='wrapper'>
-          <Footer />
-        </div>
+        // <div id='wrapper'>
+        <Footer />
+        // </div>
       );
     }
   };
