@@ -56,13 +56,13 @@ const Friends = (): React.ReactElement => {
         <input className='center' value={textVal} onChange={handleChange} onKeyDown={handleKeyPress} type='text' placeholder='enter name'></input>
         <button className='btn' onClick={submit} type='button'>Search</button>
       </form>
-      {!users ? null : <div className='addFriends'>
+      {!users ? null : <div className='add-friends'>
 
         {
           [users].map((element, index) => <div key={index}>
             <img className='profilePic' src={element.picture}></img>
             <div className='friend-name'>{element.name}</div>
-            <button className='btn btn-margin-top btn-margin' onClick={ (): any => {
+            <button className='btn friend-btn' onClick={ (): any => {
               const data = {friendsName: element.name};
               axios.post('/addFriends', data)
                 .then((data) => data)
