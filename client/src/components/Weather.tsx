@@ -27,7 +27,7 @@ const Weather = (): React.ReactElement => {
       .then(({ data: { data } }: AxiosResponse) => {
         const { temp }: { temp: number } = data[0];
         setTemperature(celsiusToFahrenheit(temp));
-        getIdealTemp(temperature);
+        getIdealTemp(celsiusToFahrenheit(temp));
       })
       .catch((err) => console.warn(err));
   };
